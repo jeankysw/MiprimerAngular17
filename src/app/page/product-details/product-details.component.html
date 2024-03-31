@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body (click)="ocultarmenu()">
+    <div class="content-principla-productDetails">
+        <div class="container-imgs">
+            <div class="container-imagenes-relaciondas">
+                <img src="../../../assets/descarga.jpeg" alt="">
+                <img src="../../../assets/descarga.jpeg" alt="">
+                <img src="../../../assets/descarga.jpeg" alt="">
+            </div>
+            <div class="container-img">
+                <img src="../../../assets/descarga.jpeg" alt="">
+            </div>
+        </div>
+        <div class="container-info-producto">
+            <h4>basic tee 6-pack</h4>
+            <p>$3'00</p>
+            <label for="">Color</label>
+            <div class="container-color-padre">
+                <div class="container-color" (click)="cambiarcolor(1)"></div>
+                <div class="container-color1 color1" (click)="cambiarcolor(2)"></div>
+                <div class="container-color2 color2" (click)="cambiarcolor(3)"></div>
+            </div>
+
+            <label for="">Talla</label>
+            <div class="container-tallas-padre">
+                <div class="container-talla" (click)="selecionarTalla(1)">M</div>
+                <div class="container-talla1 talla" (click)="selecionarTalla(2)">XL</div>
+                <div class="container-talla2 talla" (click)="selecionarTalla(3)">S</div>
+            </div>
+            <div class="container-descricion">
+                <label for="">Descripcion</label>
+                <p>
+                    Este buzo es la combinación perfecta de comodidad y estilo. Fabricado con materiales de alta
+                    calidad, este buzo te mantendrá abrigado y a la moda en cualquier ocasión. Su diseño moderno y
+                    versátil lo convierte en una prenda imprescindible en tu armario.
+                </p>
+            </div>
+
+            <div class="container-caracteristicas">
+                <label for="">Caracteristica</label>
+                <li> Material suave y cálido para mayor confort.</li>
+                <li>Diseño elegante que se adapta a diferentes estilos.</li>
+                <li>Ideal para uso casual o deportivo.</li>
+                <li>Disponible en varios colores y tallas para satisfacer tus preferencias.</li>
+            </div>
+            <div class="container-btn">
+                <button>comprar ahora </button>
+                <button>agregar al carrito </button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ratings-container">
+        <h1>Reseñas del producto</h1>
+        <div class="container-img-stars">
+            <img src="../../../assets/estrella.PNG" alt="">
+            <img src="../../../assets/estrella.PNG" alt="">
+            <img src="../../../assets/estrella.PNG" alt="">
+            <img src="../../../assets/estrella.PNG" alt="">
+            <img src="../../../assets/estrella.PNG" alt="">
+
+        </div>
+
+        @for (rating of ratings; track $index) {
+
+        <div class="rating">
+            <h4>{{ rating.stars }} </h4>
+            <img src="../../../assets/estrella.PNG" alt="">
+            <div class="percentage">
+                <div class="bar" [style.width.%]="rating.percentage"></div>
+            </div>
+            <span>{{ rating.percentage }}%</span>
+        </div>
+        }
+        <h1>Comparte tu Opinion</h1>
+        <p>Si ha utilizado este producto, comparta su opinión con otros clientes.</p>
+        <button class="btnreseña">
+            <h5>escribe una reseña</h5>
+        </button>
+        <div class="content-oponines">
+            <div class="container-img-opinion">
+                <div class="img-ciculo">
+                    <img src="../../../assets/images.jpeg" alt="">
+                </div>
+
+                <div class="container-review">
+                    <h3>Jean perez</h3>
+                    <div class="container-opiniones-stars">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <p>"Este buzo negro es simplemente impresionante. Su elegante color negro se adapta a cualquier ocasión, ya
+                sea
+                para un look casual o más formal. La calidad de la tela es excepcional, brindando una sensación de
+                suavidad
+                y comodidad incomparables.</p>
+        </div>
+
+        <div class="content-oponines">
+            <div class="container-img-opinion">
+                <div class="img-ciculo">
+                    <img src="../../../assets/images.jpeg" alt="">
+                </div>
+
+                <div class="container-review">
+                    <h3>Jean perez</h3>
+                    <div class="container-opiniones-stars">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+                        <img src="../../../assets/estrella.PNG" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <p>"Este buzo negro es simplemente impresionante. Su elegante color negro se adapta a cualquier ocasión, ya
+                sea
+                para un look casual o más formal. La calidad de la tela es excepcional, brindando una sensación de
+                suavidad
+                y comodidad incomparables.</p>
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>

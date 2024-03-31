@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content-padre">
+        @for (item of productos; track $index) {
+            <div class="product-container" >
+                <div class="product-image" (click)="VerProductosdetalles(item.id)">
+                    <img [src]="item.Image" alt="Nombre del Producto">
+                </div>
+                <div class="product">
+                    <h3>{{item.NameProducto}} </h3>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>    
+        }
+    </div>
+</body>
+
+</html>

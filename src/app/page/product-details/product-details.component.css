@@ -1,0 +1,281 @@
+body{
+    padding: 70px 0px 20px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-principla-productDetails{
+    justify-content: center;
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-imgs{
+    width: 50%;
+    height: 400px;
+    padding: 0px 10px ;
+    gap: 10px;
+    margin:0px auto;
+    display: flex;
+}
+.container-imgs img{
+    width: 90%;
+    height: 100%;
+}
+.container-imagenes-relaciondas img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+   margin-top: 10px;
+}
+.container-info-producto{
+    padding: 0px 20px;
+    width: 40%;
+    text-align: left;
+    text-transform: capitalize;
+   
+}
+.container-info-producto p{
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.container-info-producto h4{
+    font-size: 35px;
+    margin: 10px 0px;
+}
+label{
+    font-size: 22px;
+    color: rgb(83, 83, 83);
+}
+.container-color-padre{
+    display: flex;
+    width: 100px;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+.container-color,.container-color1,.container-color2{
+    width: 20PX;
+    height: 20px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.color1{
+    background-color: black;
+
+}
+.color2{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(114, 114, 114);
+    
+}
+.selected {
+  border: 2px solid transparent; 
+}
+.container-tallas-padre{
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    gap: 10px;
+}
+.container-talla{
+    border:solid 1px rgb(163, 163, 163);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.talla{
+    border:solid 1px rgb(163, 163, 163);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.container-descricion{
+    text-align: justify;
+    font-size: 20px;
+}
+.container-descricion p{
+    text-align: justify;
+    font-size: 15px;
+}
+.container-caracteristicas li{
+    text-align: justify;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.container-btn{
+    width: 100%;
+    padding: 30px 0px;
+}
+.container-btn button{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    background-color: #1403ff;
+    margin-top: 10px;
+}
+.container-btn  button:hover {
+  background-color: #2d1ff8;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+   margin: auto;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .bar {
+    background-color: #f1c40f; /* Color de la barra */
+    height: 8px;
+    border-radius: 5px;
+  }
+  .percentage{
+    width: 90%;
+    background-color: #bdbdbd;
+    height: 8px;
+    border-radius: 5px;
+    display: flex;margin: 0px 10px;
+  }
+  .container-img-stars {
+   
+    display: flex   ;
+  }
+  .container-img-stars img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0px;
+  }
+  .rating img{
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+  }
+  .btnreseña{
+    width: 170px;
+    padding:10px 15px ;
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray;
+    background: none;
+    cursor: pointer;
+  }
+  .content-oponines{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 30px;
+    border-bottom: solid 1px rgb(185, 185, 185);
+  }
+  .content-oponines P{
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+  }
+  .container-img-opinion{
+    display: flex;
+    width: 100%;
+  }
+  .img-ciculo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .img-ciculo img{
+    width: 100%;
+   
+  }
+ .container-opiniones-stars{
+    margin-left: 20px;
+ }
+  .container-opiniones-stars img{
+    width: 25px;
+    height: 25px;
+    margin: 10px 0px;
+  }
+
+  
+.product-container {
+  width: 200px;
+  height: 270px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product-image img,.product-image {
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  cursor: pointer;
+}
+
+.product{
+  margin-left: 10px;
+}
+
+
+
+.product h3 {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.add-to-cart {
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #1403ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #2d1ff8;
+}

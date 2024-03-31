@@ -1,0 +1,60 @@
+
+
+<div class="content">
+  <div class="content-target">
+    <div class="content-target-dates">
+      <div class="content-bussisne-targe">
+      </div>
+      <p class="number-target">{{number || numberpordefecto}}</p>
+
+      <div  class="content-name-venc" >
+
+        <p  class="name-target">{{name || namepordefecto }}</p> 
+        <p class="number-venci">
+          {{  mes +""+ anos|| mespordefecto + "/" + anospordefecto }}
+        </p>
+      </div>
+    </div>
+    <div class="content-target-dates-tarser">
+      <div class="content-linea-cvv-target">
+
+      </div>
+      <p class="cvc"> {{cvc || cvcpordefecto}}</p>
+     
+    </div>
+
+
+  </div>
+  <div class="content-form">
+      <form  >
+        <label for="" class="label-name" >
+          Cardholder name
+        </label><br>
+        <input type="text"class="input-name" [class.error]="hayletra" [(ngModel)]="name"  required name="name" maxlength="14"><br>
+
+        <label for=""  class="label-number">
+          CARD NUMBER
+        </label><br>
+
+    
+        <input type="text" maxlength="19" (input)="mostarNumber(number)" [(ngModel)]="number" required class="input-number" name="number"><br>
+       
+        <div class="conten-expi-date">
+          <label for="" > exp-date (mm/yy)</label>
+          <label for=""  class="label-cvc"> cvc</label>
+          <div class="conten-input-flex">
+            <input required  maxlength="2" name="mes" placeholder="MM" [(ngModel)]="mes"  class="input-date-exp"  type="text">
+          <input required  maxlength="2" name="anos" placeholder="YY"[(ngModel)]="anos" class="input-date-exp" type="text">
+          <input required  maxlength="3" name="cvc" placeholder="YY" [(ngModel)]="cvc" class="input-date-exp"  type="text">
+          </div>
+          
+        </div>
+        <button  class="btn-confirm">Confirm</button>
+
+
+      </form>
+  </div>
+ 
+</div>
+
+

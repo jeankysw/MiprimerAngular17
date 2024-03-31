@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>E-ShopElite</h1>
+
+      <div class="content-list">
+        @for(item of MenuItem ; track $index ){
+        <a [routerLink]="item.path">{{item.title}}</a>
+        }
+      </div>
+
+      <div class="content-space">
+        @if (true) {
+        <div class="content-carritos-compras">
+          <div class="content-label">
+            <h3>carrito de compras</h3>
+            <p class="cursorpointer" (click)="mostrarCarritoCompras()">X</p>
+          </div>
+          <div class="content-info-product">
+            <div class="content-img-product">
+              <img src="../../../assets/descarga.jpeg" alt="">
+            </div>
+            <div class="content-descripcion-product">
+              <div class="content">
+                <h4>Buzo negro </h4>
+                <p>Rojo</p>
+                <p>Qty1</p>
+              </div>
+              <div class="content2">
+                <h4>$3´00</h4>
+                <span>Eliminar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-info-product">
+            <div class="content-img-product">
+              <img src="../../../assets/descarga.jpeg" alt="">
+            </div>
+            <div class="content-descripcion-product">
+              <div class="content">
+                <h4>Buzo negro </h4>
+                <p>Rojo</p>
+                <p>Qty1</p>
+              </div>
+              <div class="content2">
+                <h4>$3´00</h4>
+                <span>Eliminar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="conten-btn">
+            <div class="content-precio-total">
+              <h3>subtotal</h3>
+              <p>$1000</p>
+            </div>
+            <button (click)="EnviarApagos()">Pagar</button>
+            <span (click)="mostrarCarritoCompras()">Seguir Comprando</span>
+          </div>
+        </div>
+        }
+
+        <i (click)="mostrarCarritoCompras()" class="fas fa-shopping-cart cart"></i>
+        <div class="content-perfil">
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+</body>
+
+</html>
