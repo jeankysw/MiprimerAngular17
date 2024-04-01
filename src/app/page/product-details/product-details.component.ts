@@ -76,6 +76,17 @@ ratings = [
 VerProductosdetalles(index: number) {
   this.router.navigate(['home', 'Detalles',index]);
 }
+productosss:any=[
+  {id:"1",Image:"../../../assets/descarga.jpeg ",NameProducto:"Buzo Gucci" ,Descripcion:" Este buzo es la combinación perfecta de comodidad y estilo. Fabricado con materiales de altacalidad, este buzo te mantendrá abrigado y a la moda en cualquier ocasión. Su diseño moderno y versátil lo convierte en una prenda imprescindible en tu armario"},
+]
+imagenn="../../../assets/descarga.jpeg"
+imagencambiaraarray:any=[
+  {imagenc:"/assets/aaaa.jfif"},
+  {imagenc:"/assets/OIP (1).jfif"},
 
+]
+cambiarimagen(indexw:number){
+   this.imagenn=this.imagencambiaraarray[indexw].imagenc
+}
 
 }

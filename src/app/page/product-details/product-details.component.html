@@ -11,12 +11,13 @@
     <div class="content-principla-productDetails">
         <div class="container-imgs">
             <div class="container-imagenes-relaciondas">
-                <img src="../../../assets/descarga.jpeg" alt="">
-                <img src="../../../assets/descarga.jpeg" alt="">
-                <img src="../../../assets/descarga.jpeg" alt="">
+                @for (item of imagencambiaraarray; track $index) {
+                    <img (click)="cambiarimagen($index)" [src]="item.imagenc" alt="">
+                }
+                
             </div>
             <div class="container-img">
-                <img src="../../../assets/descarga.jpeg" alt="">
+                <img [src]="imagenn" alt="">
             </div>
         </div>
         <div class="container-info-producto">
@@ -37,10 +38,10 @@
             </div>
             <div class="container-descricion">
                 <label for="">Descripcion</label>
-                <p>
-                    Este buzo es la combinación perfecta de comodidad y estilo. Fabricado con materiales de alta
-                    calidad, este buzo te mantendrá abrigado y a la moda en cualquier ocasión. Su diseño moderno y
-                    versátil lo convierte en una prenda imprescindible en tu armario.
+                <p>@for (item of productosss; track $index) {
+                    {{item.Descripcion}}
+                }
+                   
                 </p>
             </div>
 

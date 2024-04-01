@@ -16,5 +16,6 @@ export default class ArticulosComponent  {
     this.router.navigate(['home', 'Detalles',index]);
   }
   productos:any=this.productService.productos
+  
 }
 
